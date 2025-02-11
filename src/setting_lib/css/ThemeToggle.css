@@ -1,0 +1,80 @@
+/* Estilo general del botón */
+body{
+  transition: transform 0.5s, background-color 0.5s;
+}
+#modo {
+  width: 60px;
+  height: 30px;
+  background-color: #eee;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  transition: background-color 0.5s;
+  margin-left: 5px;
+  padding: 0;
+}
+
+/* Círculo deslizante */
+.circle {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #333;
+  border-radius: 50%;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+/* Modo nocturno activado */
+.dark-mode {
+  transition: transform 0.5s, background-color 0.5s;
+  color: #eee;
+  background-color: #333;
+}
+
+.dark-mode .circle {
+  transform: translateX(30px);
+}
+
+.dark-mode .auth-card {
+  transition: transform 0.5s, background-color 0.5s;
+  background-color: #292828;
+  color: white;
+}
+.dark-mode .auth-card select {
+  transition: transform 0.5s, background-color 0.5s;
+  background-color: white;
+  color: black;
+}
+.dark-mode .auth-card h2,
+.dark-mode .auth-card input{
+  color: white;
+}
+.dark-mode .auth-container {
+  transition: transform 0.5s, background-color 0.5s;
+  background-color: #333;
+  color: white;
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 400px) {
+  #modo {
+    width: 50px;
+    height: 25px;
+  }
+  .circle {
+    width: 22px;
+    height: 22px;
+  }
+  .dark-mode .circle {
+    transform: translateX(25px);
+  }
+}

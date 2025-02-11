@@ -1,0 +1,70 @@
+/* Estilos generales */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+/* Tarjeta de login y registro */
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Botón principal */
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.auth-card button:hover {
+  background: #0056b3;
+}
+
+/* Botón de navegación (registro/login) */
+.link-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.link-btn:hover {
+  color: #0056b3;
+}
